@@ -50,7 +50,7 @@ function obtenerPausa(palabra){
 
     if(palabra.endsWith(".")) return 600;
 
-    if(palabra.endsWith(",")) return 180;
+    if(palabra.endsWith(",")) return 600;
 
     if(palabra.endsWith(";")) return 250;
 
