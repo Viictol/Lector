@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lector Inteligente</title>
+
+    <link rel="stylesheet" href="Css.css">
+</head>
+
+<body>
+
+    <header>
+        
+        <h1>📖 Lector Inteligente</h1>
+        <p>Lee de forma más rápida y concentrada.</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="panel">
+
+            <h2>Texto</h2>
+
+            <textarea id="texto"
+                placeholder="Pega aquí el texto que quieres leer..."></textarea>
+
+            <div class="controles">
+
+                <div class="grupo">
+
+                    <label for="velocidad">
+                        Velocidad:
+                        <span id="valorVelocidad">250</span> PPM
+                    </label>
+
+                    <input
+                        type="range"
+                        id="velocidad"
+                        min="50"
+                        max="1000"
+                        value="250">
+
+                </div>
+
+                <div class="botones">
+
+                    <button id="btnIniciar">
+                        ▶ Iniciar
+                    </button>
+
+                    <button id="btnPausar">
+                        ⏸ Pausar
+                    </button>
+
+                    <button id="btnReiniciar">
+                        🔄 Reiniciar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <div class="encabezadoLectura">
+
+                <h2>Lectura</h2>
+
+                <span id="contador">
+                    0 / 0
+                </span>
+
+            </div>
+
+            <div class="barra">
+
+                <div id="progreso"></div>
+
+            </div>
+
+            <div id="lector"></div>
+
+        </section>
+
+    </main>
+
+    <script src="Jv.js"></script>
+
+</body>
+
+</html>
